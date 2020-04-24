@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS Producto;
+CREATE TABLE Producto (
+	fabricante VARCHAR(32),
+	modelo VARCHAR(32) PRIMARY KEY,
+	tipo VARCHAR(32)
+);
+
+DROP TABLE IF EXISTS PC;
+CREATE TABLE PC (
+	modelo VARCHAR(32) PRIMARY KEY,
+	velocidad REAL,
+	ram INT,
+	disco INT,
+	precio REAL
+);
+
+INSERT INTO Producto VALUES('HP','PC01','PC');
+INSERT INTO Producto VALUES('Apple','PC02','PC');
+INSERT INTO Producto VALUES('MSI','PC03','PC');
+INSERT INTO Producto VALUES('Asus','LP01','Laptop');
+INSERT INTO Producto VALUES('Canon','IM01','Impresora');
+INSERT INTO Producto VALUES('HP','IM02','Impresora');
+
+
+INSERT INTO PC VALUES('PC01', 2.5, 4, 32, 1500.95);
+INSERT INTO PC VALUES('PC02', 3.5, 12, 64, 2700.99);
+INSERT INTO PC VALUES('PC03', 4.7, 8, 250, 4000.95);
