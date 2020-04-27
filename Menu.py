@@ -17,6 +17,7 @@ def menuPrincipal():
         print("(a). Buscar por Velocidad y RAM ")
         print("(b). Eliminar por Modelo")
         print("(c). Decrecer el precio por Modelo")
+        print("(d). Agregar Modelo a la DB")
         print("(e). Salir")
         print("")
 
